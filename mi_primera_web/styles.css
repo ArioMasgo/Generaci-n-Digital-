@@ -1,8 +1,26 @@
-body{
-    background-color:black;
-    font-family: 'Courier New', Courier, monospace;
+*{
+    background-color:rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
 }
 h1{
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
+}
+.lista li a{
+    text-decoration: none;
+    
+}
+.lista li{
+    list-style: none;
+    margin: 0 10px;
+
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    
+}
+footer{
+    text-align: center;  
 }
