@@ -1,19 +1,27 @@
-*{
-    background-color:rgb(255, 255, 255);
+body{
+    background-color:#091A28;
     font-family: "Roboto", sans-serif;
+    color: white;
+   margin: 0;
+   padding: 0;
 }
-h1{
-    color: rgb(0, 0, 0);
-    text-align: center;
+header{
+    /* background-color: rgb(214, 229, 128); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.lista li a{
-    text-decoration: none;
-    
+.menu .lista{
+    display: flex;
+    gap: 1.1em;
 }
-.lista li{
-    list-style: none;
-    margin: 0 10px;
 
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
 }
 
 img{
