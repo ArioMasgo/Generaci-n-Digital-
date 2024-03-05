@@ -3,11 +3,12 @@
 }
 /* desing body */
 body {
-    background-color:#091A28;
+    background: linear-gradient(50deg, #091A28 50%, #072946 85%);
     font-family: "Roboto", sans-serif;
     color: white;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 .container{
     display: flex;
@@ -19,32 +20,31 @@ body {
 header{
     background-color: #091A28;
     position: fixed;
-    top: 0;
+    /* top: 0; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    border-bottom: white 2px solid;
+    /* border-bottom: white 2px solid; */
 }
 .menu .lista{
     display: flex;
     gap: 1.1em;
 }
 header a i{
-    font-size: 30px;
     cursor: pointer;
     /* background-color: #FFD700; */
-    padding:  15px 12px;
+    padding: 8px 5px;
     border-radius: 50%;
     border: 2px solid white;
 }
-i{
+a i{
     color: white;
-    font-size: 30px;
+    font-size: 23px;
     cursor: pointer;
 }
-i:hover{
+a :hover{
     color: #FFD700;
 
 }
@@ -52,7 +52,7 @@ i:hover{
 .lista a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    
     padding: 8px;
     border-radius: 5px;
 }
@@ -66,24 +66,72 @@ li{
 }
 
 /* seccion principal */
-img{
-    width: 50%;
-    height: 60%;
-    
-}
+
 #seccion-principal{
-    padding: 0 10%;
+    padding: 2% 10%;
+    margin-top: 70px;
+    width: 100%;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+.acerca-de h2{
+    font-size: 30px;
+
+}
+.acerca-de h2 span{
+    color: #FFD700;
+    font-size: 40px;
+     
+}
+.acerca-de p{
+    font-size: 20px;
+    text-justify: justify;
+}
+.acerca-de p a{
+    color: #FFD700;
+    text-decoration: none;
+}
+
+
+
+.seccion-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    padding: 5% 0;
+}
+.seccion-2{
+    text-align: center;
 }
 
 
 /* footer */
 .redes-sociales{
     display: flex;
-    gap: 2.5em;
+    gap: 2em;
     justify-content: center;
 }
+.redes-sociales a{
+   width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.redes-sociales a:hover{
+    /* background-color: #FFD700; */
+    /* color: black; */
+    border-color: #FFD700;
+    color: #FFD700;
+    transition: all 0.5s ease;
+}
 footer{
-    background-color: #072946;
+    /* background-color: #072946; */
     color: white;
     text-align: center;
     width: 100%;

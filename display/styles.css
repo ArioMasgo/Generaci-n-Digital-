@@ -1,0 +1,23 @@
+a{
+    background-color: aqua;
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+div{
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    display: inline;
+}
+p{
+    background-color: blue;
+    color: white;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+.cuadrado1{
+    
+}
+
