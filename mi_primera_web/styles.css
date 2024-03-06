@@ -4,7 +4,7 @@
 /* desing body */
 body {
     background: linear-gradient(50deg, #091A28 50%, #072946 85%);
-    font-family: "Roboto", sans-serif;
+    font-family: "roboto", sans-serif;
     color: white;
     margin: 0;
     padding: 0;
@@ -68,23 +68,52 @@ li{
 /* seccion principal */
 
 #seccion-principal{
-    padding: 2% 10%;
-    margin-top: 70px;
+    padding: 0 10%;
+    margin-top: 140px;
     width: 100%;
 }
-img{
+.acerca-imagen img{
     width: 400px;
     height: 400px;
+    border: white 3px solid;
+    border-radius: 43% 57% 70% 30% / 30% 30% 70% 70%;
+    background-color: #FFD700;
+    transition: all 0.5s ease;
+}
+.acerca-imagen img:hover{
+    transform:scale(1.1);
+    /* background-color: #072946; */
+    border-radius: 23% 77% 45% 55% / 74% 59% 41% 26% ;
+    
 }
 .acerca-de h2{
-    font-size: 30px;
+    font-size: 25px;
+}
 
-}
-.acerca-de h2 span{
+.acerca-de h2 span {
     color: #FFD700;
-    font-size: 40px;
-     
+    font-size: 30px;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+    animation: type 2s steps(12), blink-caret .5s infinite step-end alternate;
+    overflow: hidden;
 }
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
 .acerca-de p{
     font-size: 20px;
     text-justify: justify;
@@ -94,17 +123,77 @@ img{
     text-decoration: none;
 }
 
-
-
 .seccion-1{
     display: flex;
     justify-content: space-between;
     gap: 5em;
-    padding: 5% 0;
+    align-items: center;
+    height: 75vh;
 }
+.redes-sociales-menu{
+    margin-top: 30px;
+    display: flex;
+    gap: 2em;
+    /* justify-content: center; */
+}
+
 .seccion-2{
     text-align: center;
 }
+/* card design */
+
+
+/* seccion 3 */
+.section-3{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.section-3 h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.card{
+    background-color: #091A28;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border:1px solid #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(63, 62, 62);
+    transition: all 0.5s ease;
+}
+.card-content{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, 
+        minmax(360px, 1fr));
+    grid-gap: 30px;  
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card img:hover{
+    scale: 1.05;
+    transition: all 0.5s ease;
+}
+.card-description{
+    margin-bottom: 10px;
+    gap: 10px;
+    
+}
+.card-description a{
+    text-decoration: none;
+    padding: 8px;
+    background-color: #FFD700;
+    border-radius: 5px;
+}
+
 
 
 /* footer */
@@ -145,3 +234,50 @@ footer{
     padding: 12px;
     margin-bottom: auto;
 } */
+
+
+/* responsivo */
+@media (max-width: 768px){
+    
+    .seccion-1{
+        flex-direction: column;
+        gap: 2em;
+        height: auto;
+    }
+    .acerca-imagen img{
+        width: 300px;
+        height: 300px;
+    }
+    .acerca-de h2{
+        font-size: 20px;
+    }
+    .acerca-de p{
+        font-size: 16px;
+    }
+    .redes-sociales-menu{
+        margin-top: 20px;
+    }
+     .card-content{
+        grid-template-columns: repeat(
+            auto-fit, 
+            minmax(300px, 1fr));
+    }
+    .card-description a{
+        padding: 5px;
+    }
+    .redes-sociales a{
+        width: 40px;
+        height: 40px;
+    }
+    .redes-sociales a i{
+        font-size: 20px;
+    }
+    .redes-sociales a:hover{
+        border-color: #FFD700;
+        color: #FFD700;
+        transition: all 0.5s ease;
+    }
+    footer{
+        padding: 20px 0;
+    }
+}
