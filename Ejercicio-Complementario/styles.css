@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDED;
+    color: #999;
+    font-size: 14px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color: #ffffff;
+    width: 1080px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card img{
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-logo{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.card-logo a i{
+    font-size: 40px;
+    color: #333;
+}
+.card-description{
+    padding: 50px;
+}
+.card-description h1{
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 400;
+}
+p{
+    margin-bottom: 30px;
+    vertical-align: baseline;
+    line-height: 1.5rem;
+}
+.card-redes-sociales{
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+.card-redes-sociales a i{
+    font-size: 18px;
+    color: #999;
+}
+.card-redes-sociales a i:hover{
+    color: #333;
+}
+.copyrigth{
+    margin-top: 20px;
+   font-size: 12px; 
+}
+
+@media (max-width: 1080px){
+    .card{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .card img{
+        width: 100%;
+        object-fit: cover; /* Añade esta línea */
+    }
+    .card-description{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .card{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .card img{
+        width: 100%;
+        object-fit: cover; /* Añade esta línea */
+    }
+    .card-description{
+        padding: 20px;
+    }
+}
+
