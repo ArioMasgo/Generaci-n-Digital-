@@ -73,6 +73,13 @@ li{
     margin-top: 140px;
     width: 100%;
 }
+.seccion-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    align-items: center;
+    height: 75vh;
+}
 .acerca-imagen img{
     width: 400px;
     height: 400px;
@@ -124,13 +131,6 @@ li{
     text-decoration: none;
 }
 
-.seccion-1{
-    display: flex;
-    justify-content: space-between;
-    gap: 5em;
-    align-items: center;
-    height: 75vh;
-}
 .redes-sociales-menu{
     margin-top: 30px;
     display: flex;
@@ -235,14 +235,71 @@ footer{
     padding: 12px;
     margin-bottom: auto;
 } */
-
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
 
 /* responsivo */
 @media (max-width: 768px){
     
-    /* header{
+    header{
+        background-color: #091A28;
+        height: 94px;
+        border-bottom: white 1px solid;
+    } 
+    .checkbtn{
+        display: block;
+    }
+    .menu{
+        height: 0vh;
+        position: absolute;
+        top: 94px;
+        left: 0;
         width: 100%;
-    } */
+        background: #091A28;
+        text-align: center;
+        transition: all 0.7s;
+        overflow: hidden;
+    }
+     
+      .menu li{
+        display: block;
+        margin-top: 60px;
+        
+    }
+    .lista li a{
+        font-size: 20px;
+    }  
+    .menu ul.lista {
+        /* float: none; */
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+        margin-top: 30px;
+      }
+    
+      .menu ul.lista li a:hover {
+        color: #000;
+      }
+      /* ACTIVE */
+      .menu.active {
+        height: 100vh;
+      }
+    
+      .menu.active ul.lista {
+        opacity: 1;
+      }
+
+
+
+
     .seccion-1{
         flex-direction: column;
         gap: 2em;
