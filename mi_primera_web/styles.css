@@ -245,6 +245,118 @@ footer{
     display: none;
 }
 
+/* Contactos */
+.section-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    /* background-color: #f6f7f8; */
+    /* border: 1px solid #d6d9dc; */
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.section-4 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FFD700;
+  }
+
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    /* background-color: #f6f7f8; */
+    border: 1px solid #FFD700;
+    border-radius: 3px;
+    box-shadow: #bdbdbd 0px 0px 10px;
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"]{
+    /* background-color: #bdbdbd; */
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row input[type="email"] {
+    /* background-color: #bdbdbd; */
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+
 /* responsivo */
 @media (max-width: 768px){
     
@@ -341,4 +453,31 @@ footer{
     footer{
         padding: 20px 0;
     }
+
+    /* contactos */
+    .section-4 {
+        padding: 50px;
+      }
+    
+      .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .form-row input[type="text"] {
+        width: 250px;
+        height: initial;
+      }
+      .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+      }
+      .form-row textarea {
+          width: 250px;
+        }
+        .form-row button {
+          margin-left: 120px;
+        }    
 }
