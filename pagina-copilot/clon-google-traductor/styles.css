@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4285f4;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+nav a.active {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.language-selector select {
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.translation-area {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.translation-area h2 {
+    margin-top: 0;
+    color: #1a237e; /* Dark Blue */
+}
+
+.translation-area textarea {
+    width: 100%;
+    min-height: 200px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.translation-info {
+    text-align: right;
+    color: #757575; /* Grey */
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions button {
+    background: #1a237e; /* Dark Blue */
+    color: #e8eaf6; /* Light Blue */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+.actions button:hover {
+    background: #303f9f; /* Lighter Blue */
+}
+
+.actions button img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}

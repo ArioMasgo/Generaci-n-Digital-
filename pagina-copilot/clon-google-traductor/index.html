@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Traductor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c9b87a4bee.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="active"><i class="fas fa-text-height"></i> Texto</a>
+        <a href="#"><i class="fas fa-images"></i> Imágenes</a>
+        <a href="#"><i class="fas fa-file-alt"></i> Documentos</a>
+        <a href="#"><i class="fas fa-globe"></i> Sitios web</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="language-selector">
+        <select>
+          <option><i class="fas fa-language"></i> inglés</option>
+          <option selected><i class="fas fa-language"></i> español</option>
+          <option><i class="fas fa-language"></i> francés</option>
+        </select>
+        <span>&rarr;</span>
+        <select>
+          <option><i class="fas fa-language"></i> inglés</option>
+          <option selected><i class="fas fa-language"></i> español</option>
+          <option><i class="fas fa-language"></i> francés</option>
+        </select>
+      </div>
+      <div class="area">
+        <div class="translation-area">
+          <h2>Traducción</h2>
+          <textarea placeholder="Introduce el texto aquí"></textarea>
+          <div class="translation-info">0 / 5000</div>
+        </div>
+        <div class="translation-area">
+          <h2>Traducción</h2>
+          <textarea placeholder="Introduce el texto aquí"></textarea>
+          <div class="translation-info">0 / 5000</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button><img src="history.svg" alt="Historial" /> Historial</button>
+        <button><img src="star.svg" alt="Guardar" /> Guardado</button>
+        <button>
+          <img src="contribute.svg" alt="Contribuir" /> Contribuir
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
